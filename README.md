@@ -1,15 +1,16 @@
 # Gallery
 A JavaScript plugin made by using JavaScript Object Prototypes shows images in full screen and normal view.
 Use Case
-<link rel="stylesheet" href="{{asset("css/album.css")}}">
-    <link rel="stylesheet" href="{{asset("css/normalize.css")}}">
+ <script src="js/album.js"></script>
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script>
         $(document).ready(function () {
             myGallery = new Gallery({
                 objName: "myGallery",
                 imagesContainer: "#gallery",
-                imagesPath: "{{asset("images/small/")}}" + "/",
-                fullImagesPath: "{{asset("images/large/")}}" + "/",
+                imagesPath: "images/small/",
+                fullImagesPath:"images/large/",
                 imagesArray: [
                     "img1.jpg",
                     "img2.jpg",
@@ -31,4 +32,3 @@ Use Case
 <body style="background-color: silver">
 <div id="gallery" class="galleryWrapper"></div>
 </body>
-
